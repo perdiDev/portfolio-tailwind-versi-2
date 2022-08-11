@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>PerdiDev</title>
         <meta name="description" content="Make you smile with my project" />
+        <link rel='icon' href='favicon.ico' />
       </Head>
       <Component {...pageProps} />
     </>
