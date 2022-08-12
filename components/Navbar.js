@@ -1,33 +1,26 @@
-import Link from 'next/link';
 import React, { useState } from 'react'
-// import { transition } from "@headlessui/react"; //For smooth transition between elements
-// import { Link } from "react-scroll"; // For smooth scroll throughout the page
+import { Transition } from '@headlessui/react';
+import { Link } from "react-scroll";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <>
       <nav className='fixed z-20 bg-white w-full'>
         <div className='w-full'>
             <div className='flex items-center h-20 w-full'>
                 <div className='flex items-center sm:mx-10 md:mx-20 justify-between w-full'>
                     <div className='flex justify-center items-center flex-shrink-0 ml-10'>
                         <h1 className='font-bold text-xl cursor-pointer'>
-                            Stream <span className='text-blue-600'>line</span>
+                            Perdi <span className='text-blue-600'>Dev</span>
                         </h1>
                     </div>
                     <div className='hidden md:block'>
                         <div className='ml-10 flex items-baseline space-x-4'>
-                            <a href='#' className='cursor-pointer hover:text-blue-600 px-3 py-2 text-base'>Home</a>
-                            <a href='#' className='cursor-pointer hover:text-blue-600 px-3 py-2 text-base'>Service</a>
-                            <a href='#' className='cursor-pointer hover:text-blue-600 px-3 py-2 text-base'>Projects</a>
-                            <a href='#' className='cursor-pointer hover:text-blue-600 px-3 py-2 text-base'>Clients</a>
-                            <a href='#' className='cursor-pointer hover:text-blue-600 px-3 py-2 text-base'>Contact</a>
-                            {/* <Link activeClass="Home" to="home" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-base">Home</Link>
+                            <Link activeClass="Home" to="home" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-base">Home</Link>
                             <Link activeClass="service" to="service" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-base">Service</Link>
                             <Link activeClass="work" to="work" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-base">Project</Link>
-                            <Link activeClass="clients" to="clients" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-base">Client</Link>
-                            <Link activeClass="contact" to="contact" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-base">Contact</Link> */}
+                            <Link activeClass="contact" to="contact" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-base">Contact</Link>
                         </div>
                     </div>
 
@@ -57,7 +50,7 @@ export default function Navbar() {
             </div>
         </div>
         {/* Small size */}
-        {/* <Transition
+        <Transition
             show={isOpen}
             enter="transition ease-out duration-100 transform"
             enterFrom="opacity-0 scale-95"
@@ -66,20 +59,19 @@ export default function Navbar() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
         >
-            {(ref) => {
+            {(ref) => (
                 <div className='md:hidden' id='mobile-menu'>
                     <div ref={ref} className='bg-white mx-4 mr-20 pt-4 pb-4 space-y-1'>
                         <Link href="/home" activeClass="home" to="home" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</Link>
                         <Link href="/service" activeClass="service" to="service" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Service</Link>
                         <Link href="/work" activeClass="work" to="work" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</Link>
-                        <Link href="/clients" activeClass="clients" to="clients" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Clients</Link>
                         <Link href="/contact" activeClass="contact" to="contact" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
                         <Link href="/hi" activeClass="hi" to="hi" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Say<span className='text-black'></span></Link>
                     </div>
                 </div>
-            }}
-        </Transition> */}
+            )}
+        </Transition>
       </nav>
-    </div>
+    </>
   )
 }
