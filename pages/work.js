@@ -16,18 +16,18 @@ export default function work() {
           </h2>
           <div className="md:flex sm:flex-col md:flex-row justify-center items-center gap-10 md:mt-10">
             <div className="rounded w-80 h-60 shadow-xl relative md:mt-0 mt-3">
-              <Image src={portfolio1} alt="Portfolio Perdi" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
+              <Image src={portfolio1} alt="Portfolio Perdi 1" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
             </div>
             <div className="rounded w-80 h-60 shadow-xl relative md:mt-0 mt-3">
-              <Image src={portfolio2} alt="Portfolio Perdi" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
+              <Image src={portfolio2} alt="Portfolio Perdi 2" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
             </div>
             <div className="rounded w-80 h-60 shadow-xl relative md:mt-0 mt-3">
-              <Image src={portfolio3} alt="Portfolio Perdi" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
+              <Image src={portfolio3} alt="Portfolio Perdi 3" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
             </div>
           </div>
           <div className="md:flex sm:flex-col md:flex-row justify-center items-center md:gap-10 md:mt-10">
             <div className="rounded w-80 h-60 shadow-xl relative md:mt-0 mt-3">
-              <Image src={portfolio4} alt="Portfolio Perdi" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
+              <Image src={portfolio4} alt="Portfolio Perdi 4" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
             </div>
           </div>
         </div>
